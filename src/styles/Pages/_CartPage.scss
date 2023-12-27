@@ -1,0 +1,111 @@
+$main-color: #ffad32;
+
+.cart-page {
+  background-color: #2c2424;
+  border-radius: 10px;
+  text-align: center;
+
+  h2 {
+    color: $main-color;
+    font-family: 'Satisfy', cursive;
+    margin: 10px 0px;
+    padding-top: 3px;
+  }
+
+  > div {
+    background-color: white;
+    margin-bottom: 3px;
+    padding: 16px;
+
+    .item-details {
+      display: flex;
+      align-items: center;
+
+      .item-name {
+        color: #333;
+        font-weight: 600;
+        margin-right: 16px;
+      }
+
+      .item-price {
+        color: $main-color;
+        margin-right: 16px;
+      }
+
+      .quantity-controls {
+        display: flex;
+        align-items: center;
+
+        .quantity-btn {
+          cursor: pointer;
+          color: $main-color;
+          margin: 0 4px;
+        }
+
+        .quantity {
+          margin: 0 9px;
+        }
+      }
+
+      .remove-btn {
+        cursor: pointer;
+        color: #e74c3c;
+      }
+    }
+  }
+
+  .total-section {
+    padding: 16px;
+    background-color: white;
+    margin-top: 3px;
+
+    .total-text {
+      font-weight: bold;
+    }
+
+    .total-amount {
+      color: $main-color;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+  }
+
+
+    button {
+      margin-right: 10px;
+    }
+
+
+    .ant-btn-primary {
+      background-color: $main-color;
+      border-color: $main-color;
+
+      &:hover,
+      &:focus {
+        background-color: darken($main-color, 10%);
+        border-color: darken($main-color, 10%);
+      }
+
+      &:active {
+        background-color: lighten($main-color, 10%);
+        border-color: lighten($main-color, 10%);
+      }
+    }
+
+    .ant-btn-danger {
+      background-color: #e74c3c;
+      border-color: #e74c3c;
+
+      &:hover,
+      &:focus {
+        background-color: darken(#e74c3c, 10%);
+        border-color: darken(#e74c3c, 10%);
+      }
+
+      &:active {
+        background-color: lighten(#e74c3c, 10%);
+        border-color: lighten(#e74c3c, 10%);
+      }
+    }
+  }
+

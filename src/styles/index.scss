@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*mixin*/
+@import './Mixin/layouts';
+/*index from Admin*/
+@import './Admin/index';
+/*index from cards*/
+ @import './cards/index';
+ /*index from Pages*/
+@import './Pages/index';
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+
+.SideMenu{
+    height: 100%;
+}
+.SideMenuVertical{
+    height: 100%;
+}
+.PageContent{
+    padding-left: 12px;
+}
